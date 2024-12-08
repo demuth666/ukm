@@ -13,6 +13,12 @@
 </head>
 <body>
 <div class="content">
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+        <div class="logout">
+            <button onclick="return confirm('Apakah Anda yakin ingin keluar?')" class="logout-btn">Logout</button>
+        </div>
+    </form>
     <div class="start">
         <div class="logo">
             <span class="ukm">UKM</span><span class="connect">Connect</span>

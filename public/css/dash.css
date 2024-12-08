@@ -371,3 +371,25 @@ select:focus {
         width: 95%;
     }
 }
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #8E4042;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+    background-color: #5F2B2C;
+    transform: scale(1.05);
+}
