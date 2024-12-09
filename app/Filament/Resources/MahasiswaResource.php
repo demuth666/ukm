@@ -37,24 +37,26 @@ class MahasiswaResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('nama')->label('Nama')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('npm')->label('NPM')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('fakultas')->label('Fakultas')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('prodi')->label('Prodi')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('tingkat')->label('Tingkat/Semester')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('jenis_kelamin')->label('Jenis Kelamin')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('email')->label('Email')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('phone')->label('Telepon')
-                ->searchable(),
+                    ->searchable(),
                 TextColumn::make('alamat')->label('Alamat')
-                ->searchable(),
-                TextColumn::make('ukm')->label('UKM'),
+                    ->searchable(),
+                TextColumn::make('ukm')
+                    ->label('UKM')
+                    ->searchable(),
                 TextColumn::make('alasan')->label('Alasan Masuk'),
                 SelectColumn::make('status')
                     ->options([
